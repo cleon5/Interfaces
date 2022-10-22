@@ -1,61 +1,137 @@
-.Box{
-    width: 80%;
-    height: 450px;
-    margin: 0 auto;
-    justify-content: center;
-    margin-top: 80px;
-    background: linear-gradient(to bottom, #273469, #1E2749);
-    border-radius: 50px;
+.Box {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 50px;
+  background: linear-gradient(to bottom, #273469, #1e2749);
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1px;
+  grid-auto-rows: 1fr;
+}
+.Card {
+  width: 90%;
+  margin-inline: 5%;
+  margin-top: 10%;
+
+  border-radius: 12px;
+}
+.statusBar {
+  width: 70%;
+  margin-inline: 15%;
+  margin-top: 20px;
+}
+.DatosTarjeta {
+  grid-column: 2;
+  grid-row: 1;
+  width: 90%;
+  height: 80%;
+  align-self: center;
+  margin: 0 auto;
+  background-color: #30343f;
+  border-radius: 20px;
+  padding: 10px;
+}
+.ImageTarjeta {
+  grid-column: 1;
+  grid-row: 1;
+  width: 80%;
+  height: 70%;
+  align-self: center;
+  margin: 0 auto;
+  background-color: #6e2121;
+  border-radius: 50px;
+}
+
+label {
+  color: white;
+  margin: 5px;
+  font-size: 18px;
+}
+input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 8px;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+}
+
+.Boton {
+  margin: 40px;
+  padding: 10px;
+  margin-left: 79%;
+  background-color: #30343f;
+  border-radius: 10px;
+  border-color: transparent;
+  font-size: 20px;
+  color: white;
+}
+/*Vista de mobil*/
+@media screen and (max-width: 414px) {
+  .Box {
+    border-radius: 0px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 1px;
     grid-auto-rows: 1fr;
-}
-.DatosTarjeta{
-    grid-column: 2;
-    grid-row: 1;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .Card {
     width: 90%;
-    height: 80%;
+    margin-inline: 05%;
+    margin-top: 10px;
+    border-radius: 12px;
+  }
+  .statusBar {
+    width: 100%;
+    margin-inline: 1%;
+    margin-top: 20px;
+  }
+  .DatosTarjeta {
+    height: 350px;
+    grid-column: 1;
+    grid-row: 2;
     align-self: center;
     margin: 0 auto;
-    background-color: #30343F;
-    border-radius: 20px;
-    padding: 10px;
-}
-.ImageTarjeta{
+    background-color: #30343f;
+    border-radius: 25px;
+    padding: 12px;
+  }
+  .ImageTarjeta {
     grid-column: 1;
     grid-row: 1;
-    width: 80%;
-    height: 70%;
-    align-self: center;
     margin: 0 auto;
-    background-color: #6e2121;
-    border-radius: 50px;
-}
+    background-color: transparent;
+    height: 200px;
+    border-radius: 10px;
+  }
 
-label{
+  label {
     color: white;
     margin: 5px;
-    font-size: 18px;
-}
-input{
+    font-size: 12px;
+  }
+  input {
     width: 100%;
     border-radius: 5px;
-    padding: 8px;
-    align-self: center;
-    align-content: center;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-}
+    padding: 5px;
+  }
 
-.Boton{
-    margin: 40px;
-    padding: 10px;
-    margin-left: 79%;
-    background-color: #30343F;
+  .Boton {
+    background-color: #30343f;
     border-radius: 10px;
     border-color: transparent;
-    font-size: 20px;
+    font-size: 14px;
     color: white;
+  }
 }
