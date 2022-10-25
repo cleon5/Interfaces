@@ -12,7 +12,8 @@
 <body>
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar </a>
+          <img src="./bank.svg" class="svgBank" alt="">
+          <a class="navbar-brand " href="#"><h1>BBFA</h1> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -52,25 +53,28 @@
     </div>
     <div class="DatosTarjeta">
         <label>Nombre del Titular</label><br/>
-        <input/><br/>
+        <input placeholder="Nombre"/><br/>
 
         
         <label>Numero de la tarjeta</label><br/>
-        <input/><br/>
+        <input placeholder="XXXX-XXXX-XXXX-XXXX"/><br/>
 
         <div class="doble">
           <div class="fecha">
             <label>Fecha de Vencimiento</label><br/>
-           <input/><br/>
+           <input placeholder="MM/YY"/><br/>
          </div>
         
          <div class="cvv">
            <label>CVV</label><br/>
-            <input/><br/>
+            <input placeholder="X-X-X"/><br/>
          </div>
         </div>
         
-        <button class="Boton">Continuar</button>
+        <button class="Boton d-flex justify-content-center align-items-center ">
+          <img class="svg" src="./secure.svg"></img>
+            Pagar $44.99
+        </button>
     </div>
     
 </div>
