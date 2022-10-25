@@ -91,6 +91,10 @@ label {
   color: white;
   margin: 5px;
   font-size: 18px;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 input {
   width: 100%;
@@ -136,6 +140,11 @@ input {
 .Boton:hover{
   background: linear-gradient(to left, #0a1231, #071135);
 }
+.Card:hover {
+    
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 /*Vista de tablet*/
 @media screen and (max-width: 814px) {
   .Box {
@@ -156,6 +165,7 @@ input {
     margin-top: 0px;
     border-radius: 12px;
   }
+
 
   .Card3{
     position: absolute;
@@ -200,6 +210,7 @@ input {
     color: white;
     margin: 5px;
     font-size: 12px;
+
   }
   input {
     width: 100%;
