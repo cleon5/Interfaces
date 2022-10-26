@@ -46,11 +46,6 @@
   margin-left: 40px;
 }
 
-.statusBar {
-  width: 70%;
-  margin-inline: 15%;
-  margin-top: 20px;
-}
 .doble{
   display: flex;
 }
@@ -145,6 +140,38 @@ input {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+.status{
+  padding: 30px;
+}
+
+.statusBar{
+  margin: 0 auto;
+  width: 80%;
+  height: 6px;
+  border-color: black;
+  border-width: 6px;
+  background: linear-gradient(270deg, #c9c8c8 0 50%, #273469 50% 100%);;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.circle{
+  margin: -6px;
+  width: 20px;
+  height: 20px;
+  background-color: #273469;
+  border-radius: 10px;
+}
+.txtBar{
+  margin-top: 20px;
+  margin-left: -18px;
+}
+.gris{
+  background-color: #c9c8c8;
+}
+
 /*Vista de tablet*/
 @media screen and (max-width: 814px) {
   .Box {
