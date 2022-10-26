@@ -188,7 +188,7 @@ input {
     margin-top: 20px;
   }
   .DatosTarjeta {
-    height: 300px;
+    height: 320px;
     grid-column: 1;
     grid-row: 2;
     align-self: center;
