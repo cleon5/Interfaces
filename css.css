@@ -155,7 +155,6 @@ input {
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-
 }
 .circle{
   margin: -6px;
@@ -168,7 +167,7 @@ input {
 .txtBar{
   margin-top: 20px;
   margin-left: -18px;
-  
+  font-size: 16px;
 }
 .gris{
   background-color: #c9c8c8;
@@ -183,7 +182,7 @@ input {
     grid-gap: 1px;
     grid-auto-rows: 1fr, 1fr;
     width: 100%;
-    height: 900px;
+    height: fit-content;
     margin: 0 auto;
     justify-content: center;
     margin-top: 20px;
@@ -198,17 +197,17 @@ input {
 
   .Card3{
     position: absolute;
-    top: 320px;
+    top: 60vh;
     margin-left:40px;
   }
   .Card1{
     position: absolute;
-    top: 270px;
+    top: 50vh;
     margin-left: 80px;
   }
   .Card2{
     position: absolute;
-    top:220px;
+    top:40vh;
     margin-left: 120px;
   }
   .statusBar {
@@ -231,7 +230,7 @@ input {
     grid-row: 1;
     margin: 0 auto;
     background-color: transparent;
-    height: min-content;
+    height: 27em;
     border-radius: 10px;
   }
 
@@ -254,6 +253,12 @@ input {
     color: white;
     margin-left: 33%;
   }
+  .status{
+    padding: 30px;
+  }
+  .txtBar{
+    font-size: 10px;
+  }
 }
 /*vista mobil*/
 @media screen and (max-width: 414px) {
@@ -269,19 +274,19 @@ input {
     justify-content: center;
   }
   .Card3{
-    margin-left: 0px;
+    margin-left: 10px;
     position: absolute;
-    top: 200px;
+    top: 240px;
   }
   .Card1{
     position: absolute;
-    top: 170px;
-    margin-left:20px;
+    top: 210px;
+    margin-left:30px;
   }
   .Card2{
     position: absolute;
-    top:150px;
-    margin-left: 40px;
+    top:180px;
+    margin-left: 50px;
   }
 
   .DatosTarjeta {
